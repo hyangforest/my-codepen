@@ -1,117 +1,118 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-       .container {
-  position: relative;
-  width: 300px;  
-  height: 300px; 
-  background-color: white; 
-  padding: 10px;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: white;
+      padding: 10px;
+    }
 
-.container::before,
-.container::after,
-.container div::before,
-.container div::after {
-  content: '';
-  position: absolute;
-  width: 15px; 
-  height: 15px; 
-  border: 2px solid black; 
-}
+    .container::before,
+    .container::after,
+    .container div::before,
+    .container div::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 2px solid black;
+    }
 
-/* Top-left */
-.container::before {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
-}
+    /* Top-left */
+    .container::before {
+      top: 0;
+      left: 0;
+      border-right: none;
+      border-bottom: none;
+    }
 
-/* Bottom-right */
-.container::after {
-  bottom: 0;
-  right: 0;
-  border-left: none;
-  border-top: none;
-}
+    /* Bottom-right */
+    .container::after {
+      bottom: 0;
+      right: 0;
+      border-left: none;
+      border-top: none;
+    }
 
-/* Top-right */
-.container div::before {
-  top: 0;
-  right: 0;
-  border-left: none;
-  border-bottom: none;
-}
+    /* Top-right */
+    .container div::before {
+      top: 0;
+      right: 0;
+      border-left: none;
+      border-bottom: none;
+    }
 
-/* Bottom-left */
-.container div::after {
-  bottom: 0;
-  left: 0;
-  border-right: none;
-  border-top: none;
-}
+    /* Bottom-left */
+    .container div::after {
+      bottom: 0;
+      left: 0;
+      border-right: none;
+      border-top: none;
+    }
 
-/* Box */
-.box {
-  box-sizing: border-box;
-  height: 100%;
-  background-color: #d3d3d3; 
-  padding: 10px 20px;
-  overflow: auto;
-}
+    /* Box */
+    .box {
+      box-sizing: border-box;
+      height: 100%;
+      background-color: #d3d3d3;
+      padding: 10px 20px;
+      overflow: auto;
+    }
 
-.box::-webkit-scrollbar {
-  width: 8px;  /* 세로 스크롤바 너비 */
-  height: 8px; /* 가로 스크롤바 높이 */
-}
+    .box::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
 
-.box::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  background: #f1f1f1;
-  border-radius: 10px;
-}
+    .box::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
 
 
-.box::-webkit-scrollbar-thumb {
-  background-color: #888; /* 중간 회색 */
-  border-radius: 10px;
-}
+    .box::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+    }
 
-.box::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* 더 어두운 회색 */
-}
+    .box::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
 
-.box-content {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  margin: 5px auto;
-}
+    .box-content {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      margin: 5px auto;
+    }
 
-.line {
-  border-bottom: 1px solid black; /* 밑줄 스타일 */
-  padding-bottom: 5px; /* 텍스트와 밑줄 사이의 간격 */
-  margin-bottom: 5px; /* 줄 간격 조정 */
-}
-    </style>
+    .line {
+      border-bottom: 1px solid black;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-  <div class="box">
-    <div class="line">첫 번째 줄입니다.</div>
-    <div class="line">두 번째 줄입니다.</div>
-    <div class="line">세 번째 줄입니다.</div>
-    <div class="line">네 번째 줄입니다.</div>
-    <div class="line">다섯 번째 줄입니다.</div>
-    <div class="line">여섯 번째 줄입니다.</div>
-    <div class="line">일곱 번째 줄입니다.</div>
-    <div class="line">여덟 번째 줄입니다.</div>
-</div>
-
+  <div class="container">
+    <div class="box">
+      <div class="line">첫 번째 줄입니다.</div>
+      <div class="line">두 번째 줄입니다.</div>
+      <div class="line">세 번째 줄입니다.</div>
+      <div class="line">네 번째 줄입니다.</div>
+      <div class="line">다섯 번째 줄입니다.</div>
+      <div class="line">여섯 번째 줄입니다.</div>
+      <div class="line">일곱 번째 줄입니다.</div>
+      <div class="line">여덟 번째 줄입니다.</div>
+    </div>
 </body>
-</html>
 
+</html>
