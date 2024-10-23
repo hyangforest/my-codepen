@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        /* layout */
+        .container {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container::before,
+        .container::after {
+            box-sizing: inherit;
+        }
+
+        .container {
+            background-color: black;
+        }
+
+        .card-credit {
+            padding: 0.5rem;
+        }
+
+        .title {
+            margin-bottom: 0.725rem;
+        }
+
+        .title {
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .sub-title {
+            font-size: 0.825rem;
+        }
+
+        .main-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        .content {
+            padding: 0.25rem;
+        }
+
+        .line {
+            font-family: Consolas;
+        }
+
+        /* base style */
+        .base-text-color {
+            color: #c1c1bd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container base-text-color">
+        <div class="card-credit">
+            <div class="title">
+                <div class="sub-title">서브 타이틀 sub tilte</div>
+                <div class="main-title">타이틀 TITLE</div>
+            </div>
+            <div class="content">
+                <div class="line">1. line text</div>
+                <div class="line">2. line text</div>
+                <div class="line">3. line text</div>
+                <div class="line">4. line text</div>
+                <div class="line">5. line text</div>
+                <div class="line">6. line text</div>
+                <div class="line">7. line text</div>
+                <div class="line">8. line text</div>
+                <div class="line">9. line text</div>
+                <div class="line">10. line text</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
