@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        /* layout */
+        .container {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container::before,
+        .container::after {
+            box-sizing: inherit;
+        }
+
+        .header {
+            margin: 1rem;
+        }
+
+        .card {
+            position: relative;
+            padding: 0.725rem;
+        }
+
+        .album {
+            padding: 1rem;
+        }
+
+        .album-info-content,
+        .album-info-person,
+        .album-info-right {
+            display: flex;
+        }
+
+        .album-info-person {
+            align-items: center;
+        }
+
+        .album-info {
+            margin: 0.5rem 0;
+        }
+
+        .album-info-content {
+            height: 200px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .album-info-left,
+        .album-info-right {
+            width: 47%;
+            height: 100%;
+        }
+
+        .album-info-left {
+            overflow-y: auto;
+        }
+
+        .album-info-song {
+            margin-bottom: 0.5rem;
+        }
+
+        .album-info-picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* layout */
+
+        /* base-style */
+        .container {
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .card {
+            background-color: white;
+        }
+
+        .album {
+            background-color: #d3d3d3;
+        }
+
+        /* 모서리 */
+        .card::before,
+        .card::after,
+        .album::before,
+        .album::after {
+            content: '';
+            position: absolute;
+            width: 1.725rem;
+            height: 1.725rem;
+            border: 2px solid black;
+        }
+
+        /* top-left */
+        .card::before {
+            top: 0;
+            left: 0;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        /* bottom-right */
+        .card::after {
+            bottom: 0;
+            right: 0;
+            border-left: none;
+            border-top: none;
+        }
+
+        /* top-right */
+        .album::before {
+            top: 0;
+            right: 0;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        /* bottom-left */
+        .album::after {
+            bottom: 0;
+            left: 0;
+            border-right: none;
+            border-top: none;
+        }
+
+        /* 모서리 */
+
+        /* 앨범 상세 요소 */
+        .album-name {
+            font-size: 1.725rem;
+            font-weight: 700;
+        }
+
+        .album-date {
+            font-size: 0.725rem;
+        }
+
+        .album-info-person {
+            font-size: 0.9rem;
+        }
+
+        .album-info-person div {
+            padding-right: 0.125rem;
+            margin-right: 0.1rem;
+            font-weight: 500;
+        }
+
+        .album-info-person span {
+            font-size: 0.8rem;
+            font-weight: 300;
+            margin: 0 0.25rem;
+        }
+
+        .album-info-song {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .album-info-lyrics {
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 0.3rem 0.5rem;
+        }
+
+        .line {
+            margin: 0.25rem 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        /* 앨범 상세 요소 */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">앨범 소개 카드 1</div>
+        <div class="main">
+            <div class="card">
+                <div class="album">
+                    <div class="album-title">
+                        <div class="album-date">22/10/2024</div>
+                        <div class="album-name">앨범명</div>
+                    </div>
+                    <div class="album-info-person">
+                        <div><span>작사가</span>홍길동</div>
+                        <div>|</div>
+                        <div><span>작곡가</span>아무개</div>
+                    </div>
+                    <div class="album-info">
+                        <div class="album-info-song">곡명</div>
+                        <div class="album-info-content">
+                            <div class="album-info-left">
+                                <div class="album-info-lyrics">
+                                    <div class="line">1. 동해물과 백두산이 마르고 닳도록</div>
+                                    <div class="line">하느님이 보우하사 우리나라 만세</div>
+                                    <div class="line">무궁화 삼천리 화려 강산</div>
+                                    <div class="line">대한 사람 대한으로 길이 보전하세</div>
+                                    <div class="line">2. 남산 위에 저 소나무 철갑을 두른 듯</div>
+                                    <div class="line">바람 서리 불변함은 우리 기상일세</div>
+                                    <div class="line">무궁화 삼천리 화려 강산</div>
+                                    <div class="line">대한 사람 대한으로 길이 보전하세</div>
+                                    <div class="line">1. 동해물과 백두산이 마르고 닳도록</div>
+                                    <div class="line">하느님이 보우하사 우리나라 만세</div>
+                                    <div class="line">무궁화 삼천리 화려 강산</div>
+                                    <div class="line">대한 사람 대한으로 길이 보전하세</div>
+                                    <div class="line">2. 남산 위에 저 소나무 철갑을 두른 듯</div>
+                                    <div class="line">바람 서리 불변함은 우리 기상일세</div>
+                                    <div class="line">무궁화 삼천리 화려 강산</div>
+                                    <div class="line">대한 사람 대한으로 길이 보전하세</div>
+                                </div>
+                            </div>
+                            <div class="album-info-right">
+                                <div class="album-info-picture">
+                                    <img src="https://dummyimage.com/165x165/000/fff" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
