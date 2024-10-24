@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        /* layout */
+        .card {
+            margin: 0.5rem auto;
+        }
+
+        .card-head {
+            margin-bottom: 0.7rem;
+            display: grid;
+            grid-template-columns: 8% 92%;
+            align-items: center;
+        }
+
+        .card-body,
+        .content {
+            margin-bottom: 0.7rem;
+        }
+
+        .card-body {
+            height: 95px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .battery span {
+            transform: rotate(270deg);
+        }
+
+        .content {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;      
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+        }
+
+        /* layout */
+
+        /* base style */
+        .card {
+            font-family: "Noto Sans KR", serif;
+
+            background-color: black;
+            color: white;
+
+            border-radius: 0.7rem;
+            padding: 1rem;
+        }
+
+        .color-circle {
+            background-color: white;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+        }
+
+        .text {
+            font-size: 1.2rem;
+            
+        }
+
+        .content {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+        .date {
+            font-weight: 100;
+            font-size: 0.7rem;
+            text-align: right;
+        }
+
+        .battery span {
+            font-size: 2rem !important;
+            background: linear-gradient(to top, #3FCB27, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .unlike span {
+            font-size: 1.2rem;
+        }
+
+        .like span {
+            font-size: 1.0rem;
+        }
+        /* base style */
+    </style>
+</head>
+
+<body>
+    <h1>Lattter Cards</h1>
+    <div class="container">
+        <div class="card">
+            <div class="card-head">
+                <div class="color-circle"></div>
+                <div class="title">
+                    <div class="text">이런날이 있겠지.</div>
+                    <div class="battery">
+                        <span class="material-icons">battery_3_bar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="content">
+                    새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는 국회에서 예산안이 의결될 때까지 다음의 목적을 위한 경비는 전년도 예산에 준하여 집행할 수 있다. 국민경제의
+                    발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 대통령의 임기는 5년으로 하며, 중임할 수 없다. 정부는 회계연도마다 예산안을
+                    편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로
+                    정한다. 헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다.
+                    새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는 국회에서 예산안이 의결될 때까지 다음의 목적을 위한 경비는 전년도 예산에 준하여 집행할 수 있다. 국민경제의
+                    발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 대통령의 임기는 5년으로 하며, 중임할 수 없다. 정부는 회계연도마다 예산안을
+                    편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로
+                    정한다. 헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다.
+                </div>
+                <div class="date">24/10/2024 10:37:49</div>
+            </div>
+            <div class="card-footer">
+                <!-- 조회수가 0이상이면 보이게 -->
+                <div class="like"><span>💚</span></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-head">
+                <div class="color-circle"></div>
+                <div class="title">
+                    <div class="text">이런날이 있겠지.</div>
+                    <div class="battery">
+                        <span class="material-icons">battery_5_bar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="content">
+                    요약 정리
+                </div>
+                <div class="date">24/10/2024 10:37:49</div>
+            </div>
+            <div class="card-footer">
+                <!-- 조회수가 0이상이면 보이게 -->
+                <div class="like"><span>💚</span></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-head">
+                <div class="color-circle"></div>
+                <div class="title">
+                    <div class="text">이런날이 있겠지.</div>
+                    <div class="battery">
+                        <span class="material-icons">battery_0_bar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="content">
+                    새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는 국회에서 예산안이 의결될 때까지 다음의 목적을 위한 경비는 전년도 예산에 준하여 집행할 수 있다. 국민경제의
+                    발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 대통령의 임기는 5년으로 하며, 중임할 수 없다. 정부는 회계연도마다 예산안을
+                    편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로
+                    정한다. 헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다.
+                    새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는 국회에서 예산안이 의결될 때까지 다음의 목적을 위한 경비는 전년도 예산에 준하여 집행할 수 있다. 국민경제의
+                    발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 대통령의 임기는 5년으로 하며, 중임할 수 없다. 정부는 회계연도마다 예산안을
+                    편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로
+                    정한다. 헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다.
+                </div>
+                <div class="date">24/10/2024 10:37:49</div>
+            </div>
+            <div class="card-footer">
+                <!-- 조회수가 0이상이면 보이게 -->
+                <div class="like" style="visibility: hidden;"><span>💚</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
